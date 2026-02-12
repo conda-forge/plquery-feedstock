@@ -12,7 +12,7 @@ source:
   sha256: 6688d5940dbb3b866eba0fbf8ea4021c5403204c005beeb123718c47390342e6
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -38,7 +38,7 @@ outputs:
           imports:
           - plquery
           pip_check: true
-          python_version: ${{ python_min }}
+          python_version: ${{ python_min }}.*
 
   - package:
       name: plq
